@@ -1,3 +1,4 @@
+
 models:
   - name: employee
     description: "Employee DBT model"
@@ -10,7 +11,7 @@ models:
               arguments:
                 values: ['1','2','3','4','5']
                 config:
-                  severity: warn 
+                  severity: warn
       - name: emp_salary
         data_tests:
           - salary_check
@@ -19,7 +20,9 @@ models:
   - name: customer_vw
     description: "DBT Model for the customer view"
   - name: sales
-    description: "DBT model for the sales table"    
+    description: "DBT model for the sales table"
+  - name: product
+    description: "DBT Model for the product table"    
 sources:
   - name: employee
     database: DBT_DB
@@ -36,3 +39,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: SALES_SRC
+  - name: product
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PRODUCT_SRC
