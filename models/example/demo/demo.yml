@@ -51,3 +51,8 @@ sources:
     schema: PUBLIC
     tables:
       - name: PURCHASE_SRC
+  - name: patient
+    database: DBT_DB
+    schema: PUBLIC
+    tables:
+      - name: PATIENT_SRC
