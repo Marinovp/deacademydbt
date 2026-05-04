@@ -26,7 +26,11 @@ models:
   - name: purchase
     description: "DBT Model for the purchase table" 
   - name: session
-    description: "DBT Model for the session table"      
+    description: "DBT Model for the session table"    
+  - name: concat_name
+    description: "DBT Model for the concat_name table"    
+  - name: concat_address
+    description: "DBT Model for the concat_address table"      
 sources:
   - name: employee
     database: DBT_DB
@@ -57,13 +61,10 @@ sources:
     database: DBT_DB
     schema: PUBLIC
     tables:
-<<<<<<< HEAD
       - name: PATIENT_SRC
   - name: session
     database: DBT_DB
     schema: PUBLIC
     tables:
       - name: SESSION_SRC
-=======
-      - name: PATIENT_SRC
->>>>>>> bac60efc9e10ea290080b5c7a38cd01abe7093af
+
