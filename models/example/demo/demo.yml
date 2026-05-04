@@ -57,9 +57,13 @@ sources:
     database: DBT_DB
     schema: PUBLIC
     tables:
+<<<<<<< HEAD
       - name: PATIENT_SRC
   - name: session
     database: DBT_DB
     schema: PUBLIC
     tables:
       - name: SESSION_SRC
+=======
+      - name: PATIENT_SRC
+>>>>>>> bac60efc9e10ea290080b5c7a38cd01abe7093af
