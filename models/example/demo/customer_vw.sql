@@ -8,5 +8,5 @@
 }}
 
 SELECT * 
-FROM {{ ref('customer') }}
+FROM {{ ref('customer_dbt') }}
 WHERE COUNTRY= 'USA'
