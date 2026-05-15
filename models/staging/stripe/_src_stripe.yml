@@ -1,0 +1,7 @@
+ersion: 2
+
+sources:
+  - name: stripe
+    database: raw
+    tables:
+      - name: payment
