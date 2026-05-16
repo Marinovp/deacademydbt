@@ -1,20 +1,14 @@
 models:
   - name: stg_jaffle_shop__customers
-<<<<<<< HEAD
     description: Staged customer data from our jaffle shop app.
     columns: 
       - name: customer_id
         description: The primary key for customers.
-=======
-    columns:
-      - name: customer_id
->>>>>>> b7d65f4a7df6a018675d1b502ae252c09d0f5bd9
         data_tests:
           - unique
           - not_null
 
   - name: stg_jaffle_shop__orders
-<<<<<<< HEAD
     description: Staged order data from our jaffle shop app.
     columns: 
       - name: order_id
@@ -24,14 +18,6 @@ models:
           - not_null
       - name: order_status
         description: "{{ doc('order_status') }}"
-=======
-    columns:
-      - name: order_id
-        data_tests:
-          - unique
-          - not_null
-      - name: status
->>>>>>> b7d65f4a7df6a018675d1b502ae252c09d0f5bd9
         data_tests:
           - accepted_values:
               arguments:
@@ -41,23 +27,10 @@ models:
                   - returned
                   - placed
                   - return_pending
-<<<<<<< HEAD
-      - name: customer_id
-        description: Foreign key to stg_customers.customer_id
-=======
-              
-      - name: customer_id
->>>>>>> b7d65f4a7df6a018675d1b502ae252c09d0f5bd9
-        data_tests:
-          - relationships:
-              arguments:
-                to: ref('stg_jaffle_shop__customers')
-<<<<<<< HEAD
-                field: customer_id
-=======
-                field: customer_id
-        
-        
-        
-          
->>>>>>> b7d65f4a7df6a018675d1b502ae252c09d0f5bd9
+      # - name: user_id
+      #   description: Foreign key to stg_customers.customer_id
+      #   data_tests:
+      #     - relationships:
+      #         arguments:
+      #           to: ref('stg_jaffle_shop__customers')
+      #           field: user_id
